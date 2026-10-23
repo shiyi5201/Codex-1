@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f7f9">
+  <title>拾光数码｜为灵感而生</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700;800&display=swap');
+    :root{--ink:#17191c;--muted:#747980;--line:#e8e9eb;--blue:#315cf5;--paper:#f6f7f9;--white:#fff}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:'DM Sans','Noto Sans SC',sans-serif;-webkit-font-smoothing:antialiased}
+    a{color:inherit;text-decoration:none}button{font:inherit}.shell{max-width:1440px;margin:auto;padding:0 6.1%}
+    .topbar{height:70px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #e4e5e7}
+    .brand{font-size:19px;font-weight:800;letter-spacing:-.7px;display:flex;align-items:center;gap:10px}.brand-mark{width:28px;height:28px;border-radius:9px;background:var(--blue);display:grid;place-items:center;color:white;font-size:16px}
+    nav{display:flex;align-items:center;gap:34px;color:#62666c;font-size:13px}nav a:hover{color:var(--blue)}.nav-right{display:flex;gap:21px;align-items:center;color:#30343a;font-size:13px}.bag{border:1px solid #dfe1e5;padding:9px 14px;border-radius:22px;background:#fff}
+    .hero{min-height:540px;display:grid;grid-template-columns:1fr 1.08fr;align-items:center;padding:52px 0 45px;gap:24px}.eyebrow{font-size:11px;letter-spacing:2px;color:var(--blue);font-weight:700;text-transform:uppercase;display:flex;align-items:center;gap:9px}.eyebrow:before{content:'';height:1px;width:24px;background:var(--blue)}
+    h1{font-size:clamp(43px,5.2vw,74px);line-height:1.12;letter-spacing:-3px;margin:23px 0 20px;font-weight:700}.hero-copy{max-width:420px;color:var(--muted);font-size:15px;line-height:1.9;margin:0 0 29px}.actions{display:flex;align-items:center;gap:21px}.btn{display:inline-flex;align-items:center;gap:20px;padding:14px 19px;border-radius:4px;background:var(--ink);color:white;font-size:13px;transition:.2s}.btn:hover{background:var(--blue);transform:translateY(-2px)}.text-link{font-size:13px;color:#45494e}.text-link span{margin-left:8px;color:var(--blue)}
+    .hero-art{height:430px;position:relative;background:#e9edf4;border-radius:3px;overflow:hidden;display:grid;place-items:center}.hero-art:before{content:'';position:absolute;width:380px;height:380px;border-radius:50%;background:#d8dfed;top:27px;left:50%;transform:translateX(-50%)}.hero-label{position:absolute;z-index:2;left:28px;top:25px;color:#757b86;font-size:10px;letter-spacing:1.7px}.hero-caption{position:absolute;z-index:2;right:25px;bottom:25px;color:#656b75;font-size:11px;letter-spacing:1px}
+    .phone{position:relative;z-index:1;width:203px;height:372px;border-radius:34px;background:linear-gradient(130deg,#242830,#08090c 54%,#333842);padding:8px;box-shadow:24px 28px 45px #59627350;transform:rotate(-9deg) translate(-7px,8px)}.phone:after{content:'';position:absolute;width:3px;height:60px;background:#777d86;right:-3px;top:78px;border-radius:2px}.screen{height:100%;border-radius:27px;overflow:hidden;position:relative;background:radial-gradient(ellipse at 65% 35%,#ffdda0 0,#ffae8d 17%,#e37877 34%,#8667aa 56%,#39447d 79%,#171a30 100%)}.screen:before,.screen:after{content:'';position:absolute;border-radius:50%;filter:blur(2px)}.screen:before{width:170px;height:210px;background:linear-gradient(145deg,#ffe6ab,#f88c73 55%,#654b97);top:68px;left:-56px;transform:rotate(32deg)}.screen:after{width:130px;height:230px;background:linear-gradient(#ffd08a,#df7294,#5652a1);right:-68px;top:98px;transform:rotate(-27deg)}.island{position:absolute;z-index:3;top:10px;left:50%;transform:translateX(-50%);width:67px;height:17px;border-radius:12px;background:#050608}.phone-glint{position:absolute;z-index:4;inset:0;background:linear-gradient(115deg,transparent 27%,#ffffff24 43%,transparent 54%);border-radius:27px}
+    .spec-note{position:absolute;z-index:2;left:10%;bottom:16%;font-size:11px;color:#555d6a;line-height:1.8}.spec-note strong{display:block;color:#222833;font-size:13px}.orbit{position:absolute;right:14%;top:21%;z-index:2;width:68px;height:68px;border:1px solid #c9d0dd;border-radius:50%;display:grid;place-items:center;color:#556071;font-size:10px}
+    .trust{border-top:1px solid var(--line);border-bottom:1px solid var(--line);display:grid;grid-template-columns:repeat(4,1fr);padding:22px 0;margin-bottom:62px}.trust-item{display:flex;gap:12px;align-items:center;justify-content:center;border-right:1px solid var(--line)}.trust-item:last-child{border:0}.trust-icon{color:var(--blue);font-size:17px}.trust b{display:block;font-size:12px;font-weight:600}.trust small{display:block;color:#92969c;font-size:10px;margin-top:4px}
+    .section-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:24px}.section-head h2{font-size:27px;letter-spacing:-1px;margin:8px 0 0}.section-head p{color:var(--muted);font-size:12px;margin:0 0 3px}.products{display:grid;grid-template-columns:repeat(3,1fr);gap:17px;padding-bottom:75px}.product{background:white;position:relative;padding:12px 12px 18px;border:1px solid #eceef0;transition:.25s}.product:hover{transform:translateY(-4px);box-shadow:0 16px 35px #151c2b12}.product-visual{height:210px;display:grid;place-items:center;position:relative;overflow:hidden}.product-visual.phone-bg{background:#eef1f7}.product-visual.watch-bg{background:#f2efe9}.product-visual.buds-bg{background:#edf1ef}.tag{position:absolute;top:14px;left:14px;background:#fff;padding:6px 9px;font-size:9px;letter-spacing:.5px;color:#6a7077}.product-name{font-weight:600;font-size:14px;margin:14px 4px 5px}.product-desc{font-size:11px;color:#92969c;margin:0 4px}.product-bottom{display:flex;justify-content:space-between;align-items:center;margin:17px 4px 0}.price{font-size:14px;font-weight:600}.price small{font-size:10px;color:#95999f;font-weight:400}.add{border:1px solid #e5e7ea;background:white;width:31px;height:31px;border-radius:50%;cursor:pointer;font-size:17px;transition:.2s}.add:hover{background:var(--blue);border-color:var(--blue);color:white}
+    .mini-phone{width:76px;height:142px;border-radius:16px;background:linear-gradient(145deg,#232833,#080a0d);padding:4px;box-shadow:8px 13px 18px #303b5330;transform:rotate(-8deg)}.mini-phone i{display:block;height:100%;border-radius:13px;background:radial-gradient(circle at 60% 30%,#ffc2aa,#e68193 34%,#514c90 70%,#202746)}.watch{width:82px;height:82px;border-radius:24px;background:#222832;position:relative;display:grid;place-items:center;box-shadow:0 10px 18px #3332}.watch:before,.watch:after{content:'';position:absolute;width:32px;height:55px;background:#c7a97e;left:25px;z-index:0}.watch:before{bottom:68px;border-radius:10px 10px 3px 3px}.watch:after{top:68px;border-radius:3px 3px 10px 10px}.watch-face{position:relative;z-index:1;width:68px;height:68px;border-radius:21px;background:#15191f;border:3px solid #59616e;color:#f8c879;display:grid;place-items:center;font-size:15px;font-weight:600}.buds{display:flex;align-items:center;gap:14px}.bud-case{width:85px;height:59px;border-radius:23px;background:linear-gradient(145deg,#fff,#dce4e2);box-shadow:0 13px 19px #60776c2b;position:relative}.bud-case:after{content:'';position:absolute;left:8px;right:8px;top:10px;height:1px;background:#cbd3d1}.bud{width:20px;height:37px;border-radius:12px 12px 10px 10px;background:linear-gradient(110deg,#fff,#d4dddb);position:relative;box-shadow:4px 6px 9px #5b655f25}.bud:after{content:'';position:absolute;width:7px;height:20px;background:#e5ecea;left:7px;bottom:-13px;border-radius:0 0 5px 5px}
+    footer{background:#17191c;color:white;padding:28px 0}.footer-inner{display:flex;align-items:center;justify-content:space-between}.footer-inner .brand-mark{background:#fff;color:#17191c}.footer-note{color:#a2a6ac;font-size:11px}.footer-links{display:flex;gap:21px;color:#b7bbc1;font-size:11px}
+    @media(max-width:800px){.shell{padding:0 5%}nav{gap:18px}.hero{grid-template-columns:1fr 1fr;min-height:460px}.hero-art{height:350px}.phone{transform:scale(.82) rotate(-9deg)}h1{letter-spacing:-2px}.spec-note{left:6%;bottom:8%}.orbit{right:8%;top:12%}.trust{margin-bottom:48px}}
+    @media(max-width:600px){.topbar{height:62px}nav{display:none}.hero{grid-template-columns:1fr;padding:45px 0 25px;gap:34px}.hero-art{height:330px}.hero-copy{font-size:14px}.trust{grid-template-columns:1fr 1fr;row-gap:18px;padding:20px 0}.trust-item:nth-child(2){border:0}.trust-item{justify-content:flex-start;padding-left:8px}.products{grid-template-columns:1fr 1fr;gap:10px}.product-visual{height:160px}.section-head h2{font-size:23px}.section-head p{max-width:130px;text-align:right;line-height:1.6}.footer-inner{gap:15px;flex-wrap:wrap}.footer-links{gap:13px}.footer-note{order:3;width:100%}}
+  </style>
+</head>
+<body>
+  <header class="shell topbar">
+    <a class="brand" href="#top"><span class="brand-mark">拾</span>拾光数码</a>
+    <nav aria-label="主导航"><a href="#products">探索产品</a><a href="#story">品牌故事</a><a href="#service">服务支持</a></nav>
+    <div class="nav-right"><a href="#products">⌕</a><a class="bag" href="#products">购物袋 <span id="cart-count">0</span></a></div>
+  </header>
+  <main id="top" class="shell">
+    <section class="hero" id="story">
+      <div>
+        <div class="eyebrow">TECH FOR YOUR MOMENT</div>
+        <h1>让科技<br>刚好懂你。</h1>
+        <p class="hero-copy">从清晨第一缕光，到深夜灵感闪现。精选好用、耐看的数码产品，让每个日常时刻都更自在。</p>
+        <div class="actions"><a class="btn" href="x300s.html">了解 vivo X300s <span>↗</span></a><a class="text-link" href="#story">认识拾光 <span>→</span></a></div>
+      </div>
+      <div class="hero-art" aria-label="旗舰智能手机展示">
+        <div class="hero-label">NEW ARRIVAL　/　2025</div>
+        <div class="orbit">轻盈<br>之美</div>
+        <div class="phone"><div class="screen"><span class="island"></span><span class="phone-glint"></span></div></div>
+        <div class="spec-note"><strong>vivo X300s</strong>影像旗舰 · 一触即发</div>
+        <div class="hero-caption">DESIGNED FOR EVERYDAY</div>
+      </div>
+    </section>
+    <section class="trust" id="service" aria-label="服务承诺">
+      <div class="trust-item"><span class="trust-icon">◇</span><div><b>严选好物</b><small>每件都值得拥有</small></div></div>
+      <div class="trust-item"><span class="trust-icon">↗</span><div><b>顺丰包邮</b><small>满 99 元即享包邮</small></div></div>
+      <div class="trust-item"><span class="trust-icon">◷</span><div><b>7 天无忧退换</b><small>不满意，轻松退</small></div></div>
+      <div class="trust-item"><span class="trust-icon">♡</span><div><b>专属顾问</b><small>售前售后都贴心</small></div></div>
+    </section>
+    <section id="products">
+      <div class="section-head"><div><div class="eyebrow">CURATED FOR YOU</div><h2>本周精选</h2></div><p>简洁设计，认真体验<br>找到适合你的那一件。</p></div>
+      <div class="products">
+        <article class="product"><div class="product-visual phone-bg"><span class="tag">人气新品</span><div class="mini-phone"><i></i></div></div><div class="product-name">拾光 X1 Pro</div><p class="product-desc">轻薄旗舰影像手机 · 256GB</p><div class="product-bottom"><div class="price">¥ 4,999 <small>起</small></div><button class="add" aria-label="将拾光 X1 Pro 加入购物袋">+</button></div></article>
+        <article class="product"><div class="product-visual watch-bg"><span class="tag">轻运动</span><div class="watch"><div class="watch-face">09:41</div></div></div><div class="product-name">拾光 Watch S</div><p class="product-desc">全天候健康管理 · 续航 14 天</p><div class="product-bottom"><div class="price">¥ 1,299</div><button class="add" aria-label="将拾光 Watch S 加入购物袋">+</button></div></article>
+        <article class="product"><div class="product-visual buds-bg"><span class="tag">通勤必备</span><div class="buds"><div class="bud-case"></div><div class="bud"></div><div class="bud"></div></div></div><div class="product-name">拾光 Buds Air</div><p class="product-desc">自适应降噪 · 轻盈好声音</p><div class="product-bottom"><div class="price">¥ 699</div><button class="add" aria-label="将拾光 Buds Air 加入购物袋">+</button></div></article>
+      </div>
+    </section>
+  </main>
+  <footer><div class="shell footer-inner"><a class="brand" href="#top"><span class="brand-mark">拾</span>拾光数码</a><div class="footer-links"><a href="#story">关于我们</a><a href="#service">联系我们</a><a href="#service">隐私政策</a></div><div class="footer-note">© 2025 拾光数码 · 好设计，日日相伴</div></div></footer>
+  <script>
+    let count=0;document.querySelectorAll('.add').forEach(button=>button.addEventListener('click',()=>{count++;document.querySelector('#cart-count').textContent=count;button.textContent='✓';button.setAttribute('aria-label','已加入购物袋');setTimeout(()=>{button.textContent='+';button.setAttribute('aria-label','加入购物袋')},900)}));
+  </script>
+</body>
+</html>

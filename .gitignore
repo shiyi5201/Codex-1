@@ -1,0 +1,21 @@
+# OS files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# Editors
+.vscode/
+.idea/
+*.code-workspace
+
+# Dependencies and build output
+node_modules/
+dist/
+build/
+coverage/
+
+# Logs and local environment
+*.log
+.env
+.env.*
+!.env.example
